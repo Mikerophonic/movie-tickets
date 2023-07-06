@@ -7,26 +7,34 @@
     <script src="js/scripts.js"></script>
 </head>
 <body>
+<form id="movie-selection">
     <label for="movie-select">Choose a movie:</label>
-
-<select name="movies" id="movie-select">
-    <option value="">--Please choose an option--</option>
-    <option value="first-release">First-release</option>
-    <option value="old-movie">Old movie</option>
-</select>
-<label for="age">What is your age?</label>
-<input type="number" id="age">
-<fieldset style="display:inline">
-    <legend>Select a showing time:</legend>
-    <div>
-      <input type="radio" id="matinee" name="time" value="matinee">
-      <label for="matinee">matinee</label>
-    </div>
-    <div>
-      <input type="radio" id="evening" name="time" value="evening">
-      <label for="evening">evening</label>
-    </div>
-</fieldset>
+    <select name="movies" id="movie-select">
+        <option value="">--Please choose an option--</option>
+        <option value="first-release">First-release</option>
+        <option value="old-movie">Old movie</option>
+    </select>
+    <br><br>
+    <fieldset style="display:inline">
+        <legend>Select a showing time:</legend>
+        <div>
+        <input type="radio" id="matinee" name="time" value="matinee">
+        <label for="matinee">matinee</label>
+        </div>
+        <div>
+        <input type="radio" id="evening" name="time" value="evening">
+        <label for="evening">evening</label>
+        </div>
+    </fieldset>
+    <br><br>
+    <label for="age">What is your age?</label>
+    <input type="number" id="age">
+    <br><br>
+    <button type="button">Get ticket price</button>
+</form>
+<br><br>
+<h2>Total:</h2>
+<div id="total"></div>
     
 </body>
 </html>
