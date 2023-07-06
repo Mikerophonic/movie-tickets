@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <label for="movie-select">Choose a movie:</label>
+
+<select name="movies" id="movie-select">
+    <option value="">--Please choose an option--</option>
+    <option value="first-release">First-release</option>
+    <option value="old-movie">Old movie</option>
+</select>
+<label for="age">What is your age?</label>
+<input type="number" id="age">
+<fieldset style="display:inline">
+    <legend>Select a showing time:</legend>
+    <div>
+      <input type="radio" id="matinee" name="time" value="matinee">
+      <label for="matinee">matinee</label>
+    </div>
+    <div>
+      <input type="radio" id="evening" name="time" value="evening">
+      <label for="evening">evening</label>
+    </div>
+</fieldset>
+    
+</body>
+</html>

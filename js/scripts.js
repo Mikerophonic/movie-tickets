@@ -4,7 +4,7 @@ function Ticket(movieName, timeOfDay, age) {
     this.age = age;
 }
 
-Ticket.prototype.calculatePrice() {
+Ticket.prototype.calculatePrice = function() {
     let basePrice = 12;
     if (movieName !== "first-release") {
         basePrice -= 2;
